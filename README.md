@@ -9,4 +9,4 @@ Steps I took:
 2. Cloned to local machine
 3. Ran yeoman backbone generator `yo backbone`
 4. Tested basic app is running
-5. Edit HTML
+5. Add html form for todos
