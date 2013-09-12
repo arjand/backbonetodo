@@ -8,7 +8,10 @@ window.backbonetodo = {
     Routers: {},
     init: function () {
         'use strict';
-        console.log('Hello from Backbone!');
+        this.Collections = new backbonetodo.Collections.TodosCollection();
+        // start up the app!
+        new backbonetodo.Views.TodosView(
+            { collection: this.Collections });
     }
 };
 

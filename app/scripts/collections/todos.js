@@ -7,7 +7,7 @@ backbonetodo.Collections = backbonetodo.Collections || {};
 
     backbonetodo.Collections.TodosCollection = Backbone.Collection.extend({
 
-        model: backbonetodo.Models.TodosModel
+        model: backbonetodo.Models.TodoModel
 
     });
 

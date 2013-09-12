@@ -7,6 +7,16 @@ backbonetodo.Models = backbonetodo.Models || {};
 
     backbonetodo.Models.TodoModel = Backbone.Model.extend({
 
+    	defaults: {
+    		checked: false,
+    		text: ""
+    	},
+
+    	validate: function(attrs) {
+    		if( !attrs.text ){
+    			return "Every todo needs text.";
+    		}
+    	}
     });
 
 })();
