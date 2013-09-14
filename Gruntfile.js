@@ -122,9 +122,16 @@ module.exports = function (grunt) {
             all: {
                 options: {
                     run: true,
+                    log: true,
                     urls: ['http://localhost:<%= connect.options.port %>/index.html']
                 }
-            }
+            },
+            test: {
+               options: {
+                run: true,
+                urls: ['test/index.html']
+               } 
+            } 
         },
         coffee: {
             dist: {
